@@ -82,7 +82,7 @@ class App{
                                     if( this.rooms[ hash ] ){
                                         let userId = Math.floor( (Math.random() * 1000)+1 );
                                         if( this.rooms[ hash ].connections[ userId ] !== '' ){
-                                            userId = Math.floor( (Math.random() * 1000000)+1 );
+                                            userId = Math.floor( (Math.random() * 1000)+1 );
                                         }
                                         this.rooms[ hash ].connections[ userId ] = connection;
                                         this.rooms[ hash ].connections[ userId ].on( "message", ( message )=>{
