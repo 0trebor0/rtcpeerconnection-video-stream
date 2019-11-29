@@ -22,5 +22,4 @@ class Database
 	{
 		return $this->session;
 	}
-	//private function __clone(){}
 }
