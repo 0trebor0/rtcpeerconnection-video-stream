@@ -80,7 +80,7 @@ class App{
                                 if( result[0] ){
                                     let hash = result[0].room_hash;
                                     if( this.rooms[ hash ] ){
-                                        let userId = Math.floor( (Math.random() * 1000000)+1 );
+                                        let userId = Math.floor( (Math.random() * 1000)+1 );
                                         if( this.rooms[ hash ].connections[ userId ] !== '' ){
                                             userId = Math.floor( (Math.random() * 1000000)+1 );
                                         }
